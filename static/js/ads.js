@@ -1,11 +1,11 @@
    <!DOCTYPE html>
-{% load static %}
+
 <html lang="en" dir="ltr">
   <head></head>
       <meta charset="utf-8">
     <title>web sayt</title>
     <meta name="viewport" content="width= device-width, intial-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static '/semantic-ui/semantic.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="/semantic-ui/semantic.min.css">
 
    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJGY1YX8MM"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CJGY1YX8MM'); </script>
 
