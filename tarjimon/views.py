@@ -7,6 +7,10 @@ from .models import Lugat
 
 
 def index(request):
+# 	context = {
+#     'ad_size': '300x250',
+#     'ad_targeting': 'sports'
+#   }
    soz = request.GET.get('q', '')
    if soz and soz != '':
        natija = Lugat.objects.filter(ruscha__contains=soz).all()[:3]
@@ -24,6 +28,12 @@ def index(request):
 
 def salom2(request):
 	return HttpResponse('MENING SAHIFAM !!!')
+
+#  def my_view(request):
+#   context = {
+#     'ad_size': '300x250',
+#     'ad_targeting': 'sports'
+#   }
 
 #def hello3(request):
 #	return HttpResponse('MENING SAHIFAMga hush kelibsiz !!!')
