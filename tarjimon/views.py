@@ -3,10 +3,7 @@ from django.http import  HttpResponse
 from .models import Lugat
 
 
-# from datetime import datetime
 
-# from django.contrib.auth import authenticate, login
-# from django.shortcuts import render, redirect
 
 
 
@@ -38,45 +35,10 @@ def index(request):
 def salom2(request):
 	return HttpResponse('MENING SAHIFAM !!!')
 
-def ads(request):
-	 return render(request, 'ads.html')
-
-
-
-# class VisitMiddleware:
-#     def __init__(self, get_response):
-#         self.get_response = get_response
-
-#     def __call__(self, request):
-#         if not request.user.is_authenticated:
-#             # assuming you have a Visit model to store visit data
-#             visit = Visit.objects.create(
-#                 ip_address=request.META.get('REMOTE_ADDR'),
-#                 timestamp=datetime.now(),
-#             )
-#             visit.save()
-
-#         response = self.get_response(request)
-#         return response
 
 
 
 
-
-# def login_view(request):
-#     if request.method == 'POST':
-#         username = request.POST.get('username')
-#         password = request.POST.get('password')
-#         user = authenticate(request, username=username, password=password)
-#         if user is not None:
-#             login(request, user)
-#             return redirect('home') # change this to your actual homepage
-#         else:
-#             error = 'Invalid username or password'
-#     else:
-#         error = ''
-
-#     return render(request, 'login.html', {'error': error})
 
 
 
